@@ -46,6 +46,9 @@ class SongsController < ApplicationController
   end
 
   def upload
+    CSV.foreach(params[:songs].path, headers: true) do |song|
+      
+    end
   end
 
   private
